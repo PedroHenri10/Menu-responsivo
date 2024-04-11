@@ -1,0 +1,162 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  font-size: 62,5%;
+}
+
+.logo, h1, button, .menu-box, .logo-box{
+  display: inline;
+  vertical-align: middle;
+}
+
+body{
+  height: 100%;
+  width: 100%;
+  background-color: #001f3f;
+}
+
+header{
+  height: 220px;
+}
+
+.header-box{
+  width: 88%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo{
+  width: 110px;
+  height: 100px;
+}
+
+h1{
+  font-size: 35px;
+  font-weight: 400;
+}
+
+.logo-box{
+  gap: 5px;
+}
+
+.menu-box, .header-box{
+  display: flex;
+  align-items: center;
+}
+
+button{
+  width: 35px;
+  height: 35px;
+  border: 2px solid #add8e6;
+  border-radius: 5px;
+  background: transparent;
+  cursor: pointer;
+}
+
+.linha{
+  width: 20px;
+  height: 3px;
+  background-color: #add8e6;
+  display: block;
+  margin: 3px auto;
+  position: relative;
+  transform-origin: center;
+}
+
+#menu{
+ display: none;
+ flex-direction: column;
+}
+
+button.ativar .linha:nth-child(1){
+  transform: translateY(7px) rotate(-45deg);
+}
+
+button.ativar .linha:nth-child(3){
+  transform:  translateY(-5.1px) rotate(45deg);
+}
+
+button.ativar .linha:nth-child(2){
+  opacity: 0;
+}
+
+.header-box{
+  margin-top: 35px;
+  margin-bottom: 70px;
+}
+
+.menu{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu li{
+  margin-bottom: 50px;
+}
+
+.menu li:last-child {
+  margin-bottom: 0;
+}
+
+ul{
+  list-style: none;
+}
+
+nav{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu li a{
+  padding: 15px 35px;
+  font-size: 30px;
+  font-weight: 400;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+}
+
+.menu a:hover{
+  background-color: #add8e6;
+  color: #001f3f;
+  border-radius: 5px;
+}
+
+.menu .logIn{
+  font-size: 18px;
+  font-weight: 300;
+  color: #001f3f;
+  background-color: #add8e6;
+  border-radius: 5px;
+  padding: 10px 35px;
+}
+
+@media (min-width: 768px){
+  button, .menu-box{
+    display:none;
+  }
+  nav, .menu{
+    flex-direction: row;
+  }
+  .logo{
+    margin: 0;
+  }
+
+  .menu{
+    gap:30px;
+  }
+  .menu a{
+    font-size: 18px;
+    padding: 10px 8px;
+  }
+
+  .menu .logIn{
+   padding: 10px 20px;
+   font-size: 14px;
+}
+}
