@@ -3,8 +3,9 @@ window.onload = function() {
 
   const mediaQuery = window.matchMedia('(min-width: 768px)');
 // Seleciona a div com a classe 'header-box'
-  const headerBox = document.querySelector('.header-box');
+  const header = document.querySelector('header');
   const navBox = document.querySelector('.nav-box');
+  const originalHeaderContent = header.innerHTML // conteudo original do cabeçalho
 
 // Função para lidar com as alterações na largura da tela
 
@@ -28,7 +29,10 @@ window.onload = function() {
           ${navBox.innerHTML}
         </div>
 </div>`;
-      headerBox.innerHTML = newHeaderContent;
+      header.innerHTML = newHeaderContent;
+    }else{
+      // Se a tela for menor que 768px, restaure o conteúdo original da header-box
+      header.innerHTML = originalHeaderContent;
     }
   }
 
@@ -36,5 +40,5 @@ window.onload = function() {
   
   handleMediaQuery(mediaQuery);
 // Adiciona um ouvinte de mídia para lidar com as alterações na largura da tela
-  mediaQuery.addlistener(handleMediaQuery);
+  mediaQuery.addListener(handleMediaQuery);
 }
