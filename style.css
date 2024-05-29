@@ -204,6 +204,12 @@ nav{
 }
 }
 
+@media(max-width: 410px){
+  h1{
+    font-size: 22px;
+  }
+}
+
 @media (min-width: 1280px){
   .new-header{
     width: 85%;
