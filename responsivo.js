@@ -1,7 +1,7 @@
 window.onload = function() {
 // Verifica se a largura da tela é maior ou igual a 769px
 
-  const mediaQuery = window.matchMedia('(min-width: 768px)');
+  const mediaQuery = window.matchMedia('(min-width: 769px)');
 // Seleciona a div com a classe 'header-box'
   const header = document.querySelector('header');
   const navBox = document.querySelector('.nav-box');
