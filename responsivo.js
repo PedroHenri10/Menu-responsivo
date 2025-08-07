@@ -14,7 +14,7 @@ window.onload = function() {
       // Se a tela for maior ou igual a 768px, substitua a estrutura da header-box'
       const newHeaderContent = `<div class="new-header">
           <div class="logo-box">
-            <img class="logo" src="../src/img/logotechnews.jpg">
+            <img class="logo" src="src/img/logotechnews.jpg">
             <h1>TECHNEWS</h1>
           </div>
           <div class="menu-box">
