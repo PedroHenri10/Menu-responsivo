@@ -2,6 +2,14 @@
 
 Este repositório contém o código HTML, CSS e JavaScript para um menu responsivo para um site fictício chamado TechNews. O menu se adapta a diferentes tamanhos de tela, garantindo uma navegação fluida em dispositivos móveis e desktops.
 
+## Desktop
+![imagem desktop](src/img
+/tmp_12cbff4c-1d0c-4f1e-bf9c-9fd8344c5fd0.png)
+
+## Mobile
+![imagem mobile](src/img
+/Screenshot_20251022-140229.png)
+
 **Funcionalidades:**
 
 - **Menu Responsivo:**  O menu se ajusta automaticamente a telas menores, ocultando itens e exibindo um botão de menu para acessar as opções.
